@@ -8,7 +8,7 @@ To clone this repository to your local drive:
 For UNIX-based operating systems(OsX, Linux):
 Install git instructions here: https://git-scm.com/downloads
 Open Terminal
-Type git clone <repository url>
+Type git clone (repository URL)
 
 For Windows:
 Use GitHub Desktop Download Here https://desktop.github.com/
