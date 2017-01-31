@@ -1,0 +1,52 @@
+/*font-family: 'Lora', serif;
+font-family: 'Open Sans', sans-serif;*/
+
+/* CH01 - Resets
+--------------------------------*/
+
+/* CH02 - Typography
+--------------------------------*/
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.lora-text {
+	font-family: 'Lora', serif;
+
+}
+
+/* CH03 - Page Structure
+--------------------------------*/
+.container {
+	margin: 25px;
+}
+
+/* CH04 - Header & Navigation
+--------------------------------*/
+.navbar {
+	margin-bottom: 0;
+}
+
+.jumbotron {
+	background-image: url("../images/bronx-ny.jpg");
+	background-size:     cover;                   
+    background-repeat:   no-repeat;
+    background-position: center center;
+    background-color:  rgb(0,102,255);
+    background-blend-mode: multiply; 
+}
+.jumbotron .jumbo-text {
+	color: white;
+	z-index: 5;
+}
+/* CH05 - Content & Media
+--------------------------------*/
+.fb-logo {
+	height: 50px;
+	width: 50px;
+}
+/* CH06 - Footer
+--------------------------------*/
+
+/* CH07 - Miscellaneous
+--------------------------------*/
