@@ -18,10 +18,10 @@ var members = [{name: "Kem Crimmins",
 				 ];
 				}
 
-function displayMembers() {
+var displayMembers = function() {
 
-};
+}
 
-function highlightMembers() {
-
-};
+var randomMember = function() {
+	return members[Math.floor((Math.random() * members.length))];
+}
