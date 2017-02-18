@@ -5,7 +5,7 @@ var members = [{name: "Kem Crimmins",
 				description: "Kem is one of the founding members of Bronx Code Camp and the reigning wizard of JavaScript lore. Kem can often be found preaching the teachings of the YDKJS series to his followers and listening to his favorite podcast Javascript Jabber"},
 				{name: "Brian Lynch",
 				image: "https://avatars1.githubusercontent.com/u/11574695?v=3&s=460",
-				description: "Brian Lynch is a freelance web designer and developer as well as a Bronx camper. In between cups of coffee, (or a craft beer depending on how late the hour is) you can find Brian working on a redesign of Tesla's website or managing the Github repository for this website."}
+				description: "Brian Lynch is a freelance web designer and developer as well as a Bronx camper. In between cups of coffee, (or a craft beer depending on how late the hour is) you can find Brian working on a redesign of Tesla's website or managing the Github repository for this website."},
 				{name: "Drew Kao",
 				image: null,
 				description: "Drew Kay is one of the founding members of Bronx Code Camp, when hes not building websites Drew can be found studying algorithms and helping his fellow campers find solutions to their coding challenges. Drew is currently managing the <em>Cracking the Coding Interview</em> study group."},
@@ -16,25 +16,27 @@ var members = [{name: "Kem Crimmins",
 				image: null,
 				description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget massa mollis, vestibulum eros at, efficitur lectus. Ut fermentum nisi sed turpis suscipit, quis commodo nisi tincidunt. Nunc lorem ex, maximus in enim ut, auctor cursus quam. Praesent et diam lacinia, facilisis risus vitae, tempor lacus. In pulvinar volutpat nulla vestibulum aliquam. "}
 				 ];
-				}
 
 function randomMember()  {
 	return members[Math.floor((Math.random() * members.length))];
 }
 
 function displayMember(currentMember, memberID){
-	
+	$("#member"+memberID+" h4").html(currentMember.name);
+	$("#member"+memberID+" p").html(currentMember.description);
+	//$("#member"+memberID+" img").attr("src", '"'+currentMember.image+'"'); NOT WORKING!!!
 }
 
 function getHighlightedMembers() {
 	var highlightedMember;
-	for (var i = 0; i < 2; i++) {
+	for (var i = 0; i < 3; i++) {
 		highlightedMember = randomMember();
 		displayMember(highlightedMember, i);
 	}
 }
 /* On document ready, dynamically load random three members	*/
 
-$(document).ready(){
-	
-}			
+$(document).ready(function() {
+	getHighlightedMembers();
+});
+
