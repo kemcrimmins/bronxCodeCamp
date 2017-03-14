@@ -24,7 +24,7 @@ function randomMember()  {
 function displayMember(currentMember, memberID){
 	$("#member"+memberID+" h4").html(currentMember.name);
 	$("#member"+memberID+" p").html(currentMember.description);
-	//$("#member"+memberID+" img").attr("src", '"'+currentMember.image+'"'); NOT WORKING!!!
+	$("#member"+memberID+" img").attr("src", '"'+currentMember.image+'"');
 }
 
 function getHighlightedMembers() {
